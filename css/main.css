@@ -1,0 +1,113 @@
+* {margin:0;padding:0;
+   text-transform:capitalize;
+   box-sizing:border-box;
+   transition: all 0.2s linear;
+   font-family:'Poppins',sans-serif;
+   scroll-behavior:smooth;
+   list-style-type:none;
+   text-decoration:none !important;}
+
+*::selection {background:#fff;}
+
+body {overflow-x:hidden;}
+
+:root {--primary-color:#6923D0;
+       --primary-color1:#f4f0fa;
+       --primary-color2:#58555e;
+       --first-color-light:#4b0ea7;
+       --title-color:#19181b;
+       --color-light:#f9f6fd;
+       --gray:#8d8d8d;
+       --gray-dark:#343a40;
+       --light:#f8f9fa;
+       --dark:#343a40;
+
+       --font-mont:'Mont', cursive;
+       --font-Rale: 'Rale', cursive;
+
+       --box-shadow:0 0 .5rem #090a0a7a;
+       --box-shadow2:0 .5rem 1.5rem #0d2e2e23;
+       --box-shadow3:0 .3rem 4rem #252c2c2f;
+       --box-shadow4:0 0 4px #000;
+       --box-shadow5:0 0 40px 20px rgba(0,0,0,0.26);
+       --box-shadow6:5px 5px 5px #eee;}
+
+
+/************************ 
+  # Start Form Section
+************************/
+.form {width:100%;
+       height:100vh;
+       font-family:sans-serif;
+       background:rgb(166, 166, 231);
+       color:#fff;
+       display:flex;
+       align-items:center;
+       justify-content:center;}
+
+.form .card {width:30%;
+             height:30rem;
+             box-shadow:0 0 40px 20px rgba(0,0,0,0.26);
+             perspective:1000px;}
+
+.form .card .inner-box {position:relative;
+                        width:100%;
+                        height:100%;
+                        transition:all 1s ease;
+                        transform-style:preserve-3d;}
+
+.card-front, 
+.card-back   {position:absolute;
+              width:100%;
+              height:100%;
+              background-image:linear-gradient(rgba(0,0,100,0.8),rgba(0,0,100,0.8)),url(../img/house2.jpg);
+              background-size:cover;
+              background-position:center;
+              padding:3rem;
+              backface-visibility:hidden;}
+
+.card-back {transform:rotateY(180deg);}
+
+.form .inner-box .card-front h2 {font-size:2rem;
+                                 font-weight:bold;}
+
+.form .inner-box form .input-box {width:100%;
+                                              outline:none;
+                                              border:1px solid #fff;
+                                              margin:0.3rem 0;
+                                              padding:0.3rem 0.8rem 0.1rem;
+                                              background:transparent;
+                                              color:#fff;
+                                              border-radius:2rem;}
+
+.form button {width:100%;
+              outline:none;
+              border:1px solid #fff;
+              color:#fff;
+              background:transparent;
+              padding:0.3rem 0.8rem;
+              margin:2rem 0 1rem;
+              border-radius:2rem;
+              cursor:pointer;}
+
+.form .submit-btn {position:relative;}
+
+.form .submit-btn::after {content:'\27a4';
+                          position:absolute;
+                          right:-1px;
+                          top:-1px;
+                          font-size:1.1rem;
+                          width:2.2rem;
+                          height:2.2rem;
+                          line-height:38px;
+                          padding-left:0.2rem;
+                          background:#fff;
+                          color:#333;
+                          border-radius:50%;}
+
+.form .btn {margin-top:3rem;
+            color:#fff;}
+
+.form a {color:#fff;
+         display:block;
+         text-align:center;}
